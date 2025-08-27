@@ -1,7 +1,16 @@
 name: Manual
 on:
   workflow_dispatch:
-
+    inputs:
+      environment:
+        description: "Choose Environment:"
+        required: true
+        default: "staging"
+        type: choose
+        options:
+          - staging
+          - production
+          - test
 jobs:
   deploy:
     runs-on: ubuntu-latest
