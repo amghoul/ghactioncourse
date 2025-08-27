@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: Print a welcome message
         run: echo "Welcome to our first GitHub Actions Workflow!"
+      
+      - name: List repo
+        run: ls -la
